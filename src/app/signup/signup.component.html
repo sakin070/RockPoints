@@ -1,0 +1,47 @@
+<div class="ui container" id="container-log-in">
+  <div class="ui header center aligned">
+    <a href="/">
+      <img class="ui medium image" href="/" style="display:inline; bottom: 6.5px; left: 2px;" src="../../assets/images/musaroq_logo.png">
+    </a>
+  </div>
+
+  <div class="ui basic segment">
+    <div class="content">
+      <form class="ui form" (ngSubmit)="register()">
+        <label>First Name</label>
+        <div class="ui left icon input fluid field" id="input-register">
+          <input type="text" name="name" [(ngModel)]="newUser.firstName" placeholder="First Name">
+          <i class="left user icon"></i>
+        </div>
+
+        <label>Last Name</label>
+        <div class="ui left icon input fluid field" id="input-register">
+          <input type="text" name="name" [(ngModel)]="newUser.lastName" placeholder="Last Name">
+          <i class="left user icon"></i>
+        </div>
+
+        <label>Email address</label>
+        <div class="ui left icon input fluid field" id="input-register">
+          <input type="email" name="email" [(ngModel)]="newUser.email" placeholder="Email address">
+          <i class="left envelope icon"></i>
+        </div>
+
+
+        <!--Date of birth should be included in the form-->
+
+        <label>Password</label>
+        <div class="ui left icon input fluid field" id="input-register">
+          <i class="lock icon"></i>
+          <input type="password" name="password" [(ngModel)]="password" placeholder="Password">
+        </div>
+
+        <label>Confirm Password</label>
+        <div class="ui left icon input fluid field" id="input-register">
+          <i class="lock icon"></i>
+          <input type="password" placeholder="Confirm password">
+        </div>
+        <button type="submit" class="ui fluid google plus button button-login">Register Account</button>
+      </form>
+    </div>
+  </div>
+</div>

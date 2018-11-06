@@ -1,0 +1,25 @@
+<div class="ui container" id="container-log-in">
+  <img class="ui centered medium image" src="../../assets/images/musaroq_logo.png">
+  <div class="ui basic segment">
+    <div class="content">
+      <form class="ui form" (ngSubmit)="addPoint()">
+        <div class="ui left icon input fluid">
+          <input type="number" [(ngModel)]="data.cardNumber" placeholder="Card Number" name="cardNumber">
+          <i class="credit card outline icon"></i>
+        </div>
+        <div class="ui left icon input fluid" id="input-login">
+          <input type="number" [(ngModel)]="data.totalCost" placeholder="Total Cost" name="totalCost">
+          <i class="dollar sign icon"></i>
+        </div>
+          <button type="submit" class="ui fluid google plus button button-login">Add</button>
+      </form>
+    </div>
+    <div class="ui basic segment">
+      <button class="ui fluid button black button-login" routerLink="/home" routerLinkActive="active">Home</button>
+    </div>
+  </div>
+  <!--<div class="ui basic segment center aligned">-->
+  <!--New to Talentboard?-->
+  <!--<a routerLink="/register" routerLinkActive="active">Create an account</a>.-->
+  <!--</div>-->
+</div>
