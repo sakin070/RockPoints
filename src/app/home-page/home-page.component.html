@@ -1,21 +1,16 @@
-<div class="ui inverted menu">
-  <a class="item" routerLink="/activateCard" routerLinkActive="active">
-    Activate Card
-  </a>
-
-  <a class=" item" routerLink="/addPoints" routerLinkActive="active">
-    Add Points
-  </a>
-  <a class="item" routerLink="/spendPoints" routerLinkActive="active">
-    Spend Points
-  </a>
-  <a class="item" routerLink="/viewPoint" routerLinkActive="active">
-    View Points
-  </a>
-
-  <div class="right menu">
-    <a class="ui item" (click)="logout()">
-      Logout
-    </a>
+<div class="ui container" id="container-log-in">
+  <img class="ui centered medium image" src="../../assets/images/musaroq_logo.png">
+  <div class="ui basic segment">
+    <div class="content">
+      <button type="submit" routerLink="/activateCard" routerLinkActive="active" class="ui fluid green button button-login">Activate Card</button>
+      <p> </p>
+      <button type="submit" routerLink="/addPoints" routerLinkActive="active" class="ui fluid google plus button button-login">Add Points</button>
+      <p> </p>
+      <button type="submit" routerLink="/spendPoints" routerLinkActive="active" class="ui fluid orange button button-login">Spend Points</button>
+      <p> </p>
+      <button type="submit" routerLink="/viewPoint" routerLinkActive="active" class="ui fluid purple button button-login">View Points</button>
+      <p> </p>
+      <button (click)="logout()"  class="ui fluid grey button button-login">Log Out</button>
+    </div>
   </div>
 </div>
